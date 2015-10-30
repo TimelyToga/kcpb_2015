@@ -117,7 +117,7 @@ public class TesterClass {
 		System.out.printf("TOTAL DELETES: %d\n\n", tDeletes);
 		System.out.printf("TOTAL GET MISSES: %d %.2f%%\n", tGMisses, gMissRate);
 		System.out.printf("TOTAL DELETE MISSES: %d %.2f%%\n\n", tDMisses, dMissRate);
-		System.out.printf("FAIL RATE: %.3f%%\n\n", stressFailRate);
+		System.out.printf("STRESS TEST FAIL RATE: %.3f%%\n\n", stressFailRate);
 	}
 	
 	private static boolean assertEqualsPrint(String name, boolean condition, boolean print){
