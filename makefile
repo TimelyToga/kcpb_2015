@@ -1,12 +1,12 @@
 JC = javac
 
 default: 
-	$(JC) -sourcepath src -d bin src/*.java
+	$(JC) -sourcepath src -d classes src/*.java
 	echo "\n\nRunning Tests\n"
-	java -cp bin TesterClass
+	java -cp classes TesterClass
 
 clean:
-	$(RM) bin/*
-	$(JC) -sourcepath src -d bin src/*.java
+	$(RM) classes/*
+	$(JC) -sourcepath src -d classes src/*.java
 	@echo "\n\nRunning Tests\n"
-	java -cp bin TesterClass
+	java -cp classes TesterClass
