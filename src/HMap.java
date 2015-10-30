@@ -28,7 +28,6 @@ public class HMap {
 		int arrayKey = getHash(key);
 		if(values[arrayKey] == null){
 			values[arrayKey] = value;
-			System.out.println(values[arrayKey]);
 			numItems++;
 			return true;
 		}
@@ -44,6 +43,7 @@ public class HMap {
 		int arrayKey = getHash(key);
 		Object o = values[arrayKey];
 		if(o != null){
+			values[arrayKey] = null;
 			numItems--;
 		}
 		
